@@ -1,0 +1,1110 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://frangp83.github.io/ontotravel#"
+     xml:base="https://frangp83.github.io/ontotravel"
+     xmlns:mod="https://w3id.org/mod#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:geo1="http://www.owl-ontologies.com/geo#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:ontrv="https://frangp83.github.io/ontotravel#"
+     xmlns:dbpedia="http://www.owl-ontologies.com/dbpedia#"
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:schema1="http://schema.org/">
+    <owl:Ontology rdf:about="https://frangp83.github.io/ontotravel#">
+        <owl:versionIRI rdf:resource="https://frangp83.github.io/ontotravel/1.0"/>
+        <dcterms:bibliographicCitation>González Pérez, F. M. (2025) OntoTravel</dcterms:bibliographicCitation>
+        <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-04-03</dcterms:created>
+        <dcterms:creator>Francisco Manuel González Pérez</dcterms:creator>
+        <dcterms:description xml:lang="en">This ontology&apos;s purpose is to link events, restaurants, transport services, hotels and attractions, with cities acting as a central node</dcterms:description>
+        <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <dcterms:title xml:lang="en">OntoTravel: a travel ontology</dcterms:title>
+        <vann:preferredNamespacePrefix>ontrv</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri rdf:resource="https://frangp83.github.io/ontotravel#"/>
+        <owl:versionInfo>1.0</owl:versionInfo>
+        <mod:createdWith rdf:resource="https://chowlk.linkeddata.es/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/bibliographicCitation -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/bibliographicCitation"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#versionIRI -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionIRI"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#versionInfo -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionInfo"/>
+    
+
+
+    <!-- https://w3id.org/mod#createdWith -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/mod#createdWith"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://frangp83.github.io/ontotravel#hasAttractionType -->
+
+    <owl:ObjectProperty rdf:about="https://frangp83.github.io/ontotravel#hasAttractionType">
+        <rdfs:domain rdf:resource="https://frangp83.github.io/ontotravel#Attraction"/>
+        <rdfs:range rdf:resource="https://frangp83.github.io/ontotravel#AttractionType"/>
+        <rdfs:label>has attraction type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://frangp83.github.io/ontotravel#hasCity -->
+
+    <owl:ObjectProperty rdf:about="https://frangp83.github.io/ontotravel#hasCity">
+        <owl:inverseOf rdf:resource="https://frangp83.github.io/ontotravel#isCityOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://frangp83.github.io/ontotravel#Attraction"/>
+                    <rdf:Description rdf:about="https://frangp83.github.io/ontotravel#Event"/>
+                    <rdf:Description rdf:about="https://frangp83.github.io/ontotravel#Hotel"/>
+                    <rdf:Description rdf:about="https://frangp83.github.io/ontotravel#Restaurant"/>
+                    <rdf:Description rdf:about="https://frangp83.github.io/ontotravel#Transport"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://frangp83.github.io/ontotravel#City"/>
+        <rdfs:label>has city</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://frangp83.github.io/ontotravel#hasCuisineType -->
+
+    <owl:ObjectProperty rdf:about="https://frangp83.github.io/ontotravel#hasCuisineType">
+        <rdfs:domain rdf:resource="https://frangp83.github.io/ontotravel#Restaurant"/>
+        <rdfs:range rdf:resource="https://frangp83.github.io/ontotravel#CuisineType"/>
+        <rdfs:label>has cuisine type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://frangp83.github.io/ontotravel#hasCurrency -->
+
+    <owl:ObjectProperty rdf:about="https://frangp83.github.io/ontotravel#hasCurrency">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="https://frangp83.github.io/ontotravel#Price"/>
+        <rdfs:range rdf:resource="https://frangp83.github.io/ontotravel#Currency"/>
+        <rdfs:label>has currency</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://frangp83.github.io/ontotravel#hasEventType -->
+
+    <owl:ObjectProperty rdf:about="https://frangp83.github.io/ontotravel#hasEventType">
+        <rdfs:domain rdf:resource="https://frangp83.github.io/ontotravel#Event"/>
+        <rdfs:range rdf:resource="https://frangp83.github.io/ontotravel#EventType"/>
+        <rdfs:label>has event type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://frangp83.github.io/ontotravel#hasHotelType -->
+
+    <owl:ObjectProperty rdf:about="https://frangp83.github.io/ontotravel#hasHotelType">
+        <rdfs:domain rdf:resource="https://frangp83.github.io/ontotravel#Hotel"/>
+        <rdfs:range rdf:resource="https://frangp83.github.io/ontotravel#HotelType"/>
+        <rdfs:label>has hotel type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://frangp83.github.io/ontotravel#hasPrice -->
+
+    <owl:ObjectProperty rdf:about="https://frangp83.github.io/ontotravel#hasPrice">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://frangp83.github.io/ontotravel#Attraction"/>
+                    <rdf:Description rdf:about="https://frangp83.github.io/ontotravel#Event"/>
+                    <rdf:Description rdf:about="https://frangp83.github.io/ontotravel#Hotel"/>
+                    <rdf:Description rdf:about="https://frangp83.github.io/ontotravel#Restaurant"/>
+                    <rdf:Description rdf:about="https://frangp83.github.io/ontotravel#Transport"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://frangp83.github.io/ontotravel#Price"/>
+        <rdfs:label>has price</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://frangp83.github.io/ontotravel#hasRating -->
+
+    <owl:ObjectProperty rdf:about="https://frangp83.github.io/ontotravel#hasRating">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://frangp83.github.io/ontotravel#Attraction"/>
+                    <rdf:Description rdf:about="https://frangp83.github.io/ontotravel#Event"/>
+                    <rdf:Description rdf:about="https://frangp83.github.io/ontotravel#Hotel"/>
+                    <rdf:Description rdf:about="https://frangp83.github.io/ontotravel#Restaurant"/>
+                    <rdf:Description rdf:about="https://frangp83.github.io/ontotravel#Transport"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://frangp83.github.io/ontotravel#Rating"/>
+        <rdfs:label>has rating</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://frangp83.github.io/ontotravel#hasTransportCompany -->
+
+    <owl:ObjectProperty rdf:about="https://frangp83.github.io/ontotravel#hasTransportCompany">
+        <rdfs:domain rdf:resource="https://frangp83.github.io/ontotravel#Transport"/>
+        <rdfs:range rdf:resource="https://frangp83.github.io/ontotravel#TransportCompany"/>
+        <rdfs:label>has transport company</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://frangp83.github.io/ontotravel#hasTransportType -->
+
+    <owl:ObjectProperty rdf:about="https://frangp83.github.io/ontotravel#hasTransportType">
+        <rdfs:domain rdf:resource="https://frangp83.github.io/ontotravel#Transport"/>
+        <rdfs:range rdf:resource="https://frangp83.github.io/ontotravel#TransportType"/>
+        <rdfs:label>has transport type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://frangp83.github.io/ontotravel#isCityOf -->
+
+    <owl:ObjectProperty rdf:about="https://frangp83.github.io/ontotravel#isCityOf">
+        <rdfs:domain rdf:resource="https://frangp83.github.io/ontotravel#City"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://frangp83.github.io/ontotravel#Attraction"/>
+                    <rdf:Description rdf:about="https://frangp83.github.io/ontotravel#Event"/>
+                    <rdf:Description rdf:about="https://frangp83.github.io/ontotravel#Hotel"/>
+                    <rdf:Description rdf:about="https://frangp83.github.io/ontotravel#Restaurant"/>
+                    <rdf:Description rdf:about="https://frangp83.github.io/ontotravel#Transport"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label>is city of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.owl-ontologies.com/geo#lat -->
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/geo#lat">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:label>lat</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/geo#long -->
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/geo#long">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:label>long</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://frangp83.github.io/ontotravel#hasDate -->
+
+    <owl:DatatypeProperty rdf:about="https://frangp83.github.io/ontotravel#hasDate">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:label>has date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://frangp83.github.io/ontotravel#hasId -->
+
+    <owl:DatatypeProperty rdf:about="https://frangp83.github.io/ontotravel#hasId">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>has id</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://frangp83.github.io/ontotravel#hasName -->
+
+    <owl:DatatypeProperty rdf:about="https://frangp83.github.io/ontotravel#hasName">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>has name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://frangp83.github.io/ontotravel#hasPriceValue -->
+
+    <owl:DatatypeProperty rdf:about="https://frangp83.github.io/ontotravel#hasPriceValue">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:label>has price value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://frangp83.github.io/ontotravel#hasRatingValue -->
+
+    <owl:DatatypeProperty rdf:about="https://frangp83.github.io/ontotravel#hasRatingValue">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:label>has rating value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://frangp83.github.io/ontotravel#stars -->
+
+    <owl:DatatypeProperty rdf:about="https://frangp83.github.io/ontotravel#stars">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>stars</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://schema.org/City -->
+
+    <owl:Class rdf:about="http://schema.org/City">
+        <owl:equivalentClass rdf:resource="https://frangp83.github.io/ontotravel#City"/>
+        <rdfs:label>City</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/Hotel -->
+
+    <owl:Class rdf:about="http://schema.org/Hotel">
+        <owl:equivalentClass rdf:resource="https://frangp83.github.io/ontotravel#Hotel"/>
+        <rdfs:label>Hotel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/dbpedia#Restaurant -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/dbpedia#Restaurant">
+        <owl:equivalentClass rdf:resource="https://frangp83.github.io/ontotravel#Restaurant"/>
+        <rdfs:label>Restaurant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://frangp83.github.io/ontotravel#Attraction -->
+
+    <owl:Class rdf:about="https://frangp83.github.io/ontotravel#Attraction">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://frangp83.github.io/ontotravel#hasAttractionType"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://frangp83.github.io/ontotravel#AttractionType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://frangp83.github.io/ontotravel#hasCity"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://frangp83.github.io/ontotravel#City"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://frangp83.github.io/ontotravel#hasRating"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://frangp83.github.io/ontotravel#Rating"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://frangp83.github.io/ontotravel#hasName"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://frangp83.github.io/ontotravel#hasId"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Attraction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://frangp83.github.io/ontotravel#AttractionGrade -->
+
+    <owl:Class rdf:about="https://frangp83.github.io/ontotravel#AttractionGrade">
+        <rdfs:subClassOf rdf:resource="https://frangp83.github.io/ontotravel#Attraction"/>
+        <rdfs:label>Attraction Grade</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://frangp83.github.io/ontotravel#AttractionType -->
+
+    <owl:Class rdf:about="https://frangp83.github.io/ontotravel#AttractionType">
+        <rdfs:label>Attraction Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://frangp83.github.io/ontotravel#AveragePricedHotel -->
+
+    <owl:Class rdf:about="https://frangp83.github.io/ontotravel#AveragePricedHotel">
+        <rdfs:subClassOf rdf:resource="https://frangp83.github.io/ontotravel#HotelAffordability"/>
+        <rdfs:label>Average Priced Hotel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://frangp83.github.io/ontotravel#AveragePricedRestaurant -->
+
+    <owl:Class rdf:about="https://frangp83.github.io/ontotravel#AveragePricedRestaurant">
+        <rdfs:subClassOf rdf:resource="https://frangp83.github.io/ontotravel#RestaurantAffordability"/>
+        <rdfs:label>Average Priced Restaurant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://frangp83.github.io/ontotravel#AveragePricedTransport -->
+
+    <owl:Class rdf:about="https://frangp83.github.io/ontotravel#AveragePricedTransport">
+        <rdfs:subClassOf rdf:resource="https://frangp83.github.io/ontotravel#TransportAffordability"/>
+        <rdfs:label>Average Priced Transport</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://frangp83.github.io/ontotravel#AverageRatedAttraction -->
+
+    <owl:Class rdf:about="https://frangp83.github.io/ontotravel#AverageRatedAttraction">
+        <rdfs:subClassOf rdf:resource="https://frangp83.github.io/ontotravel#AttractionGrade"/>
+        <rdfs:label>Average Rated Attraction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://frangp83.github.io/ontotravel#AverageRatedHotel -->
+
+    <owl:Class rdf:about="https://frangp83.github.io/ontotravel#AverageRatedHotel">
+        <rdfs:subClassOf rdf:resource="https://frangp83.github.io/ontotravel#HotelGrade"/>
+        <rdfs:label>Average Rated Hotel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://frangp83.github.io/ontotravel#AverageRatedRestaurant -->
+
+    <owl:Class rdf:about="https://frangp83.github.io/ontotravel#AverageRatedRestaurant">
+        <rdfs:subClassOf rdf:resource="https://frangp83.github.io/ontotravel#RestaurantGrade"/>
+        <rdfs:label>Average Rated Restaurant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://frangp83.github.io/ontotravel#BadRatedAttraction -->
+
+    <owl:Class rdf:about="https://frangp83.github.io/ontotravel#BadRatedAttraction">
+        <rdfs:subClassOf rdf:resource="https://frangp83.github.io/ontotravel#AttractionGrade"/>
+        <rdfs:label>Bad Rated Attraction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://frangp83.github.io/ontotravel#BadRatedHotel -->
+
+    <owl:Class rdf:about="https://frangp83.github.io/ontotravel#BadRatedHotel">
+        <rdfs:subClassOf rdf:resource="https://frangp83.github.io/ontotravel#HotelGrade"/>
+        <rdfs:label>Bad Rated Hotel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://frangp83.github.io/ontotravel#BadRatedRestaurant -->
+
+    <owl:Class rdf:about="https://frangp83.github.io/ontotravel#BadRatedRestaurant">
+        <rdfs:subClassOf rdf:resource="https://frangp83.github.io/ontotravel#RestaurantGrade"/>
+        <rdfs:label>Bad Rated Restaurant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://frangp83.github.io/ontotravel#BudgetCity -->
+
+    <owl:Class rdf:about="https://frangp83.github.io/ontotravel#BudgetCity">
+        <rdfs:subClassOf rdf:resource="https://frangp83.github.io/ontotravel#City"/>
+        <rdfs:label>Budget City</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://frangp83.github.io/ontotravel#CheapHotel -->
+
+    <owl:Class rdf:about="https://frangp83.github.io/ontotravel#CheapHotel">
+        <rdfs:subClassOf rdf:resource="https://frangp83.github.io/ontotravel#HotelAffordability"/>
+        <rdfs:label>Cheap Hotel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://frangp83.github.io/ontotravel#CheapRestaurant -->
+
+    <owl:Class rdf:about="https://frangp83.github.io/ontotravel#CheapRestaurant">
+        <rdfs:subClassOf rdf:resource="https://frangp83.github.io/ontotravel#RestaurantAffordability"/>
+        <rdfs:label>Cheap Restaurant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://frangp83.github.io/ontotravel#CheapTransport -->
+
+    <owl:Class rdf:about="https://frangp83.github.io/ontotravel#CheapTransport">
+        <rdfs:subClassOf rdf:resource="https://frangp83.github.io/ontotravel#TransportAffordability"/>
+        <rdfs:label>Cheap Transport</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://frangp83.github.io/ontotravel#City -->
+
+    <owl:Class rdf:about="https://frangp83.github.io/ontotravel#City">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://frangp83.github.io/ontotravel#hasName"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://frangp83.github.io/ontotravel#hasId"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.owl-ontologies.com/geo#lat"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.owl-ontologies.com/geo#long"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>City</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://frangp83.github.io/ontotravel#ConcertCity -->
+
+    <owl:Class rdf:about="https://frangp83.github.io/ontotravel#ConcertCity">
+        <rdfs:subClassOf rdf:resource="https://frangp83.github.io/ontotravel#City"/>
+        <rdfs:label>Concert City</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://frangp83.github.io/ontotravel#CuisineType -->
+
+    <owl:Class rdf:about="https://frangp83.github.io/ontotravel#CuisineType">
+        <rdfs:label>Cuisine Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://frangp83.github.io/ontotravel#Currency -->
+
+    <owl:Class rdf:about="https://frangp83.github.io/ontotravel#Currency">
+        <rdfs:label>Currency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://frangp83.github.io/ontotravel#Event -->
+
+    <owl:Class rdf:about="https://frangp83.github.io/ontotravel#Event">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://frangp83.github.io/ontotravel#hasEventType"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://frangp83.github.io/ontotravel#EventType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://frangp83.github.io/ontotravel#hasCity"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://frangp83.github.io/ontotravel#City"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://frangp83.github.io/ontotravel#hasName"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://frangp83.github.io/ontotravel#hasDate"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://frangp83.github.io/ontotravel#hasId"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://frangp83.github.io/ontotravel#EventType -->
+
+    <owl:Class rdf:about="https://frangp83.github.io/ontotravel#EventType">
+        <rdfs:label>Event Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://frangp83.github.io/ontotravel#ExpensiveHotel -->
+
+    <owl:Class rdf:about="https://frangp83.github.io/ontotravel#ExpensiveHotel">
+        <rdfs:subClassOf rdf:resource="https://frangp83.github.io/ontotravel#HotelAffordability"/>
+        <rdfs:label>Expensive Hotel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://frangp83.github.io/ontotravel#ExpensiveRestaurant -->
+
+    <owl:Class rdf:about="https://frangp83.github.io/ontotravel#ExpensiveRestaurant">
+        <rdfs:subClassOf rdf:resource="https://frangp83.github.io/ontotravel#RestaurantAffordability"/>
+        <rdfs:label>Expensive Restaurant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://frangp83.github.io/ontotravel#ExpensiveTransport -->
+
+    <owl:Class rdf:about="https://frangp83.github.io/ontotravel#ExpensiveTransport">
+        <rdfs:subClassOf rdf:resource="https://frangp83.github.io/ontotravel#TransportAffordability"/>
+        <rdfs:label>Expensive Transport</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://frangp83.github.io/ontotravel#GoodRatedAttraction -->
+
+    <owl:Class rdf:about="https://frangp83.github.io/ontotravel#GoodRatedAttraction">
+        <rdfs:subClassOf rdf:resource="https://frangp83.github.io/ontotravel#AttractionGrade"/>
+        <rdfs:label>Good Rated Attraction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://frangp83.github.io/ontotravel#GoodRatedHotel -->
+
+    <owl:Class rdf:about="https://frangp83.github.io/ontotravel#GoodRatedHotel">
+        <rdfs:subClassOf rdf:resource="https://frangp83.github.io/ontotravel#HotelGrade"/>
+        <rdfs:label>Good Rated Hotel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://frangp83.github.io/ontotravel#GoodRatedRestaurant -->
+
+    <owl:Class rdf:about="https://frangp83.github.io/ontotravel#GoodRatedRestaurant">
+        <rdfs:subClassOf rdf:resource="https://frangp83.github.io/ontotravel#RestaurantGrade"/>
+        <rdfs:label>Good Rated Restaurant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://frangp83.github.io/ontotravel#Hotel -->
+
+    <owl:Class rdf:about="https://frangp83.github.io/ontotravel#Hotel">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://frangp83.github.io/ontotravel#hasHotelType"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://frangp83.github.io/ontotravel#HotelType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://frangp83.github.io/ontotravel#hasCity"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://frangp83.github.io/ontotravel#City"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://frangp83.github.io/ontotravel#hasPrice"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://frangp83.github.io/ontotravel#Price"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://frangp83.github.io/ontotravel#hasRating"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://frangp83.github.io/ontotravel#Rating"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://frangp83.github.io/ontotravel#hasName"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://frangp83.github.io/ontotravel#hasId"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://frangp83.github.io/ontotravel#stars"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Hotel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://frangp83.github.io/ontotravel#HotelAffordability -->
+
+    <owl:Class rdf:about="https://frangp83.github.io/ontotravel#HotelAffordability">
+        <rdfs:subClassOf rdf:resource="https://frangp83.github.io/ontotravel#Hotel"/>
+        <rdfs:label>Hotel Affordability</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://frangp83.github.io/ontotravel#HotelGrade -->
+
+    <owl:Class rdf:about="https://frangp83.github.io/ontotravel#HotelGrade">
+        <rdfs:subClassOf rdf:resource="https://frangp83.github.io/ontotravel#Hotel"/>
+        <rdfs:label>Hotel Grade</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://frangp83.github.io/ontotravel#HotelType -->
+
+    <owl:Class rdf:about="https://frangp83.github.io/ontotravel#HotelType">
+        <rdfs:label>Hotel Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://frangp83.github.io/ontotravel#Price -->
+
+    <owl:Class rdf:about="https://frangp83.github.io/ontotravel#Price">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://frangp83.github.io/ontotravel#hasCurrency"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://frangp83.github.io/ontotravel#Currency"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://frangp83.github.io/ontotravel#hasPriceValue"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Price</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://frangp83.github.io/ontotravel#Rating -->
+
+    <owl:Class rdf:about="https://frangp83.github.io/ontotravel#Rating">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://frangp83.github.io/ontotravel#hasRatingValue"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Rating</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://frangp83.github.io/ontotravel#Restaurant -->
+
+    <owl:Class rdf:about="https://frangp83.github.io/ontotravel#Restaurant">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://frangp83.github.io/ontotravel#hasCuisineType"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://frangp83.github.io/ontotravel#CuisineType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://frangp83.github.io/ontotravel#hasCity"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://frangp83.github.io/ontotravel#City"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://frangp83.github.io/ontotravel#hasPrice"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://frangp83.github.io/ontotravel#Price"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://frangp83.github.io/ontotravel#hasRating"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://frangp83.github.io/ontotravel#Rating"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://frangp83.github.io/ontotravel#hasName"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://frangp83.github.io/ontotravel#hasId"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Restaurant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://frangp83.github.io/ontotravel#RestaurantAffordability -->
+
+    <owl:Class rdf:about="https://frangp83.github.io/ontotravel#RestaurantAffordability">
+        <rdfs:subClassOf rdf:resource="https://frangp83.github.io/ontotravel#Restaurant"/>
+        <rdfs:label>Restaurant Affordability</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://frangp83.github.io/ontotravel#RestaurantGrade -->
+
+    <owl:Class rdf:about="https://frangp83.github.io/ontotravel#RestaurantGrade">
+        <rdfs:subClassOf rdf:resource="https://frangp83.github.io/ontotravel#Restaurant"/>
+        <rdfs:label>Restaurant Grade</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://frangp83.github.io/ontotravel#TechHub -->
+
+    <owl:Class rdf:about="https://frangp83.github.io/ontotravel#TechHub">
+        <rdfs:subClassOf rdf:resource="https://frangp83.github.io/ontotravel#City"/>
+        <rdfs:label>Tech Hub</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://frangp83.github.io/ontotravel#Transport -->
+
+    <owl:Class rdf:about="https://frangp83.github.io/ontotravel#Transport">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://frangp83.github.io/ontotravel#hasCity"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://frangp83.github.io/ontotravel#City"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://frangp83.github.io/ontotravel#hasPrice"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://frangp83.github.io/ontotravel#Price"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://frangp83.github.io/ontotravel#hasTransportCompany"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://frangp83.github.io/ontotravel#TransportCompany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://frangp83.github.io/ontotravel#hasTransportType"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://frangp83.github.io/ontotravel#TransportType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://frangp83.github.io/ontotravel#hasId"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Transport</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://frangp83.github.io/ontotravel#TransportAffordability -->
+
+    <owl:Class rdf:about="https://frangp83.github.io/ontotravel#TransportAffordability">
+        <rdfs:subClassOf rdf:resource="https://frangp83.github.io/ontotravel#Transport"/>
+        <rdfs:label>Transport Affordability</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://frangp83.github.io/ontotravel#TransportCompany -->
+
+    <owl:Class rdf:about="https://frangp83.github.io/ontotravel#TransportCompany">
+        <rdfs:label>Transport Company</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://frangp83.github.io/ontotravel#TransportType -->
+
+    <owl:Class rdf:about="https://frangp83.github.io/ontotravel#TransportType">
+        <rdfs:label>Transport Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://frangp83.github.io/ontotravel#VeryGoodRatedAttraction -->
+
+    <owl:Class rdf:about="https://frangp83.github.io/ontotravel#VeryGoodRatedAttraction">
+        <rdfs:subClassOf rdf:resource="https://frangp83.github.io/ontotravel#AttractionGrade"/>
+        <rdfs:label>Very Good Rated Attraction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://frangp83.github.io/ontotravel#VeryGoodRatedHotel -->
+
+    <owl:Class rdf:about="https://frangp83.github.io/ontotravel#VeryGoodRatedHotel">
+        <rdfs:subClassOf rdf:resource="https://frangp83.github.io/ontotravel#HotelGrade"/>
+        <rdfs:label>Very Good Rated Hotel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://frangp83.github.io/ontotravel#VeryGoodRatedRestaurant -->
+
+    <owl:Class rdf:about="https://frangp83.github.io/ontotravel#VeryGoodRatedRestaurant">
+        <rdfs:subClassOf rdf:resource="https://frangp83.github.io/ontotravel#RestaurantGrade"/>
+        <rdfs:label>Very Good Rated Restaurant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://frangp83.github.io/ontotravel#AveragePricedHotel"/>
+            <rdf:Description rdf:about="https://frangp83.github.io/ontotravel#CheapHotel"/>
+            <rdf:Description rdf:about="https://frangp83.github.io/ontotravel#ExpensiveHotel"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://frangp83.github.io/ontotravel#AveragePricedRestaurant"/>
+            <rdf:Description rdf:about="https://frangp83.github.io/ontotravel#CheapRestaurant"/>
+            <rdf:Description rdf:about="https://frangp83.github.io/ontotravel#ExpensiveRestaurant"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://frangp83.github.io/ontotravel#AveragePricedTransport"/>
+            <rdf:Description rdf:about="https://frangp83.github.io/ontotravel#CheapTransport"/>
+            <rdf:Description rdf:about="https://frangp83.github.io/ontotravel#ExpensiveTransport"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://frangp83.github.io/ontotravel#AverageRatedAttraction"/>
+            <rdf:Description rdf:about="https://frangp83.github.io/ontotravel#BadRatedAttraction"/>
+            <rdf:Description rdf:about="https://frangp83.github.io/ontotravel#GoodRatedAttraction"/>
+            <rdf:Description rdf:about="https://frangp83.github.io/ontotravel#VeryGoodRatedAttraction"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://frangp83.github.io/ontotravel#AverageRatedHotel"/>
+            <rdf:Description rdf:about="https://frangp83.github.io/ontotravel#BadRatedHotel"/>
+            <rdf:Description rdf:about="https://frangp83.github.io/ontotravel#GoodRatedHotel"/>
+            <rdf:Description rdf:about="https://frangp83.github.io/ontotravel#VeryGoodRatedHotel"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://frangp83.github.io/ontotravel#AverageRatedRestaurant"/>
+            <rdf:Description rdf:about="https://frangp83.github.io/ontotravel#BadRatedRestaurant"/>
+            <rdf:Description rdf:about="https://frangp83.github.io/ontotravel#GoodRatedRestaurant"/>
+            <rdf:Description rdf:about="https://frangp83.github.io/ontotravel#VeryGoodRatedRestaurant"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
