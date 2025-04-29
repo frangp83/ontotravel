@@ -17111,43 +17111,37 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#attraction">
+    <rdf:Description rdf:about="https://frangp83.github.io/ontotravel#attraction">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#rating">
+    <rdf:Description rdf:about="https://frangp83.github.io/ontotravel#rating">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#value">
+    <rdf:Description rdf:about="https://frangp83.github.io/ontotravel#value">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
-    <rdf:Description rdf:about="https://frango83.github.io/ontotravel#restaurant">
+    <rdf:Description rdf:about="https://frangp83.github.io/ontotravel#city">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
-    <rdf:Description rdf:about="https://frango83.github.io/ontotravel#hotel">
+    <rdf:Description rdf:about="https://frangp83.github.io/ontotravel#hotel">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
-    <rdf:Description rdf:about="https://frango83.github.io/ontotravel#city">
+    <rdf:Description rdf:about="https://frangp83.github.io/ontotravel#restaurant">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
-    <rdf:Description rdf:about="https://frango83.github.io/ontotravel#hoteltype">
+    <rdf:Description rdf:about="https://frangp83.github.io/ontotravel#hoteltype">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
-    <rdf:Description rdf:about="https://frango83.github.io/ontotravel#event">
+    <rdf:Description rdf:about="https://frangp83.github.io/ontotravel#event">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
-    <rdf:Description rdf:about="https://frango83.github.io/ontotravel#eventtype">
+    <rdf:Description rdf:about="https://frangp83.github.io/ontotravel#eventtype">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#hotel">
+    <rdf:Description rdf:about="https://frangp83.github.io/ontotravel#price">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#price">
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#restaurant">
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#transport">
+    <rdf:Description rdf:about="https://frangp83.github.io/ontotravel#transport">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
     <rdf:Description>
@@ -17160,10 +17154,9 @@
                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                 <rdf:first>
                     <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasRating"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#attraction"/>
-                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#rating"/>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://frangp83.github.io/ontotravel#Attraction"/>
+                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#attraction"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -17171,10 +17164,10 @@
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                         <rdf:first>
                             <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasRatingValue"/>
-                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#rating"/>
-                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#value"/>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasRating"/>
+                                <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#attraction"/>
+                                <swrl:argument2 rdf:resource="https://frangp83.github.io/ontotravel#rating"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -17182,21 +17175,10 @@
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                 <rdf:first>
                                     <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
-                                        <swrl:arguments>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                <rdf:first rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#value"/>
-                                                <rdf:rest>
-                                                    <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.5</rdf:first>
-                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                                    </rdf:Description>
-                                                </rdf:rest>
-                                            </rdf:Description>
-                                        </swrl:arguments>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasRatingValue"/>
+                                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#rating"/>
+                                        <swrl:argument2 rdf:resource="https://frangp83.github.io/ontotravel#value"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -17205,15 +17187,15 @@
                                         <rdf:first>
                                             <rdf:Description>
                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
                                                 <swrl:arguments>
                                                     <rdf:Description>
                                                         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                        <rdf:first rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#value"/>
+                                                        <rdf:first rdf:resource="https://frangp83.github.io/ontotravel#value"/>
                                                         <rdf:rest>
                                                             <rdf:Description>
                                                                 <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</rdf:first>
+                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.5</rdf:first>
                                                                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
                                                             </rdf:Description>
                                                         </rdf:rest>
@@ -17226,9 +17208,21 @@
                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                                 <rdf:first>
                                                     <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                        <swrl:classPredicate rdf:resource="https://frangp83.github.io/ontotravel#Attraction"/>
-                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#attraction"/>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                                        <swrl:arguments>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:resource="https://frangp83.github.io/ontotravel#value"/>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</rdf:first>
+                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </swrl:arguments>
                                                     </rdf:Description>
                                                 </rdf:first>
                                                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -17249,7 +17243,7 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                         <swrl:classPredicate rdf:resource="https://frangp83.github.io/ontotravel#AverageRatedAttraction"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#attraction"/>
+                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#attraction"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -17266,10 +17260,9 @@
                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                 <rdf:first>
                     <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasRating"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#attraction"/>
-                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#rating"/>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://frangp83.github.io/ontotravel#Attraction"/>
+                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#attraction"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -17277,10 +17270,10 @@
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                         <rdf:first>
                             <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasRatingValue"/>
-                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#rating"/>
-                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#value"/>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasRating"/>
+                                <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#attraction"/>
+                                <swrl:argument2 rdf:resource="https://frangp83.github.io/ontotravel#rating"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -17288,21 +17281,10 @@
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                 <rdf:first>
                                     <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
-                                        <swrl:arguments>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                <rdf:first rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#value"/>
-                                                <rdf:rest>
-                                                    <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.5</rdf:first>
-                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                                    </rdf:Description>
-                                                </rdf:rest>
-                                            </rdf:Description>
-                                        </swrl:arguments>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasRatingValue"/>
+                                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#rating"/>
+                                        <swrl:argument2 rdf:resource="https://frangp83.github.io/ontotravel#value"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -17310,9 +17292,21 @@
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                         <rdf:first>
                                             <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                <swrl:classPredicate rdf:resource="https://frangp83.github.io/ontotravel#Attraction"/>
-                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#attraction"/>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:resource="https://frangp83.github.io/ontotravel#value"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
                                             </rdf:Description>
                                         </rdf:first>
                                         <rdf:rest>
@@ -17321,15 +17315,15 @@
                                                 <rdf:first>
                                                     <rdf:Description>
                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
                                                         <swrl:arguments>
                                                             <rdf:Description>
                                                                 <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                                <rdf:first rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#value"/>
+                                                                <rdf:first rdf:resource="https://frangp83.github.io/ontotravel#value"/>
                                                                 <rdf:rest>
                                                                     <rdf:Description>
                                                                         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</rdf:first>
+                                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.5</rdf:first>
                                                                         <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
                                                                     </rdf:Description>
                                                                 </rdf:rest>
@@ -17355,7 +17349,7 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                         <swrl:classPredicate rdf:resource="https://frangp83.github.io/ontotravel#GoodRatedAttraction"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#attraction"/>
+                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#attraction"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -17372,10 +17366,9 @@
                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                 <rdf:first>
                     <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasRating"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#attraction"/>
-                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#rating"/>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://frangp83.github.io/ontotravel#Attraction"/>
+                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#attraction"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -17383,10 +17376,10 @@
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                         <rdf:first>
                             <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasRatingValue"/>
-                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#rating"/>
-                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#value"/>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasRating"/>
+                                <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#attraction"/>
+                                <swrl:argument2 rdf:resource="https://frangp83.github.io/ontotravel#rating"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -17394,21 +17387,10 @@
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                 <rdf:first>
                                     <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
-                                        <swrl:arguments>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                <rdf:first rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#value"/>
-                                                <rdf:rest>
-                                                    <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.5</rdf:first>
-                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                                    </rdf:Description>
-                                                </rdf:rest>
-                                            </rdf:Description>
-                                        </swrl:arguments>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasRatingValue"/>
+                                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#rating"/>
+                                        <swrl:argument2 rdf:resource="https://frangp83.github.io/ontotravel#value"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -17416,9 +17398,21 @@
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                         <rdf:first>
                                             <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                <swrl:classPredicate rdf:resource="https://frangp83.github.io/ontotravel#Attraction"/>
-                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#attraction"/>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:resource="https://frangp83.github.io/ontotravel#value"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.5</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
                                             </rdf:Description>
                                         </rdf:first>
                                         <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -17437,7 +17431,7 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                         <swrl:classPredicate rdf:resource="https://frangp83.github.io/ontotravel#VeryGoodRatedAttraction"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#attraction"/>
+                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#attraction"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -17454,10 +17448,9 @@
                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                 <rdf:first>
                     <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasRating"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#attraction"/>
-                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#rating"/>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://frangp83.github.io/ontotravel#Attraction"/>
+                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#attraction"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -17465,21 +17458,10 @@
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                         <rdf:first>
                             <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
-                                <swrl:arguments>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                        <rdf:first rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#value"/>
-                                        <rdf:rest>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.5</rdf:first>
-                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                            </rdf:Description>
-                                        </rdf:rest>
-                                    </rdf:Description>
-                                </swrl:arguments>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasRating"/>
+                                <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#attraction"/>
+                                <swrl:argument2 rdf:resource="https://frangp83.github.io/ontotravel#rating"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -17489,8 +17471,8 @@
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
                                         <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasRatingValue"/>
-                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#rating"/>
-                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#value"/>
+                                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#rating"/>
+                                        <swrl:argument2 rdf:resource="https://frangp83.github.io/ontotravel#value"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -17498,9 +17480,21 @@
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                         <rdf:first>
                                             <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                <swrl:classPredicate rdf:resource="https://frangp83.github.io/ontotravel#Attraction"/>
-                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#attraction"/>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:resource="https://frangp83.github.io/ontotravel#value"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.5</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
                                             </rdf:Description>
                                         </rdf:first>
                                         <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -17519,7 +17513,7 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                         <swrl:classPredicate rdf:resource="https://frangp83.github.io/ontotravel#BadRatedAttraction"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#attraction"/>
+                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#attraction"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -17537,8 +17531,8 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="https://frangp83.github.io/ontotravel#CheapRestaurant"/>
-                        <swrl:argument1 rdf:resource="https://frango83.github.io/ontotravel#restaurant"/>
+                        <swrl:classPredicate rdf:resource="https://frangp83.github.io/ontotravel#City"/>
+                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#city"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -17546,9 +17540,10 @@
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                         <rdf:first>
                             <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="https://frangp83.github.io/ontotravel#CheapHotel"/>
-                                <swrl:argument1 rdf:resource="https://frango83.github.io/ontotravel#hotel"/>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#isCityOf"/>
+                                <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#city"/>
+                                <swrl:argument2 rdf:resource="https://frangp83.github.io/ontotravel#hotel"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -17556,10 +17551,9 @@
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                 <rdf:first>
                                     <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                        <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#isCityOf"/>
-                                        <swrl:argument1 rdf:resource="https://frango83.github.io/ontotravel#city"/>
-                                        <swrl:argument2 rdf:resource="https://frango83.github.io/ontotravel#restaurant"/>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="https://frangp83.github.io/ontotravel#CheapHotel"/>
+                                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#hotel"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -17569,8 +17563,8 @@
                                             <rdf:Description>
                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                                 <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#isCityOf"/>
-                                                <swrl:argument1 rdf:resource="https://frango83.github.io/ontotravel#city"/>
-                                                <swrl:argument2 rdf:resource="https://frango83.github.io/ontotravel#hotel"/>
+                                                <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#city"/>
+                                                <swrl:argument2 rdf:resource="https://frangp83.github.io/ontotravel#restaurant"/>
                                             </rdf:Description>
                                         </rdf:first>
                                         <rdf:rest>
@@ -17579,8 +17573,8 @@
                                                 <rdf:first>
                                                     <rdf:Description>
                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                        <swrl:classPredicate rdf:resource="https://frangp83.github.io/ontotravel#City"/>
-                                                        <swrl:argument1 rdf:resource="https://frango83.github.io/ontotravel#city"/>
+                                                        <swrl:classPredicate rdf:resource="https://frangp83.github.io/ontotravel#CheapRestaurant"/>
+                                                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#restaurant"/>
                                                     </rdf:Description>
                                                 </rdf:first>
                                                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -17601,7 +17595,7 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                         <swrl:classPredicate rdf:resource="https://frangp83.github.io/ontotravel#BudgetCity"/>
-                        <swrl:argument1 rdf:resource="https://frango83.github.io/ontotravel#city"/>
+                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#city"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -17618,10 +17612,9 @@
                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                 <rdf:first>
                     <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasHotelType"/>
-                        <swrl:argument1 rdf:resource="https://frango83.github.io/ontotravel#hotel"/>
-                        <swrl:argument2 rdf:resource="https://frango83.github.io/ontotravel#hoteltype"/>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://frangp83.github.io/ontotravel#City"/>
+                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#city"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -17630,9 +17623,9 @@
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasEventType"/>
-                                <swrl:argument1 rdf:resource="https://frango83.github.io/ontotravel#event"/>
-                                <swrl:argument2 rdf:resource="https://frango83.github.io/ontotravel#eventtype"/>
+                                <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#isCityOf"/>
+                                <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#city"/>
+                                <swrl:argument2 rdf:resource="https://frangp83.github.io/ontotravel#hotel"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -17640,9 +17633,10 @@
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                 <rdf:first>
                                     <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#SameIndividualAtom"/>
-                                        <swrl:argument1 rdf:resource="https://frango83.github.io/ontotravel#hoteltype"/>
-                                        <swrl:argument2 rdf:resource="https://frangp83.github.io/ontotravel#Business"/>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasHotelType"/>
+                                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#hotel"/>
+                                        <swrl:argument2 rdf:resource="https://frangp83.github.io/ontotravel#hoteltype"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -17650,10 +17644,9 @@
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                         <rdf:first>
                                             <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#isCityOf"/>
-                                                <swrl:argument1 rdf:resource="https://frango83.github.io/ontotravel#city"/>
-                                                <swrl:argument2 rdf:resource="https://frango83.github.io/ontotravel#event"/>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#SameIndividualAtom"/>
+                                                <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#hoteltype"/>
+                                                <swrl:argument2 rdf:resource="https://frangp83.github.io/ontotravel#Business"/>
                                             </rdf:Description>
                                         </rdf:first>
                                         <rdf:rest>
@@ -17663,8 +17656,8 @@
                                                     <rdf:Description>
                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                                         <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#isCityOf"/>
-                                                        <swrl:argument1 rdf:resource="https://frango83.github.io/ontotravel#city"/>
-                                                        <swrl:argument2 rdf:resource="https://frango83.github.io/ontotravel#hotel"/>
+                                                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#city"/>
+                                                        <swrl:argument2 rdf:resource="https://frangp83.github.io/ontotravel#event"/>
                                                     </rdf:Description>
                                                 </rdf:first>
                                                 <rdf:rest>
@@ -17672,9 +17665,10 @@
                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                                         <rdf:first>
                                                             <rdf:Description>
-                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                                <swrl:classPredicate rdf:resource="https://frangp83.github.io/ontotravel#City"/>
-                                                                <swrl:argument1 rdf:resource="https://frango83.github.io/ontotravel#city"/>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasEventType"/>
+                                                                <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#event"/>
+                                                                <swrl:argument2 rdf:resource="https://frangp83.github.io/ontotravel#eventtype"/>
                                                             </rdf:Description>
                                                         </rdf:first>
                                                         <rdf:rest>
@@ -17683,7 +17677,7 @@
                                                                 <rdf:first>
                                                                     <rdf:Description>
                                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#SameIndividualAtom"/>
-                                                                        <swrl:argument1 rdf:resource="https://frango83.github.io/ontotravel#eventtype"/>
+                                                                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#eventtype"/>
                                                                         <swrl:argument2 rdf:resource="https://frangp83.github.io/ontotravel#Tech_event"/>
                                                                     </rdf:Description>
                                                                 </rdf:first>
@@ -17709,7 +17703,7 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                         <swrl:classPredicate rdf:resource="https://frangp83.github.io/ontotravel#TechHub"/>
-                        <swrl:argument1 rdf:resource="https://frango83.github.io/ontotravel#city"/>
+                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#city"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -17726,10 +17720,9 @@
                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                 <rdf:first>
                     <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasEventType"/>
-                        <swrl:argument1 rdf:resource="https://frango83.github.io/ontotravel#event"/>
-                        <swrl:argument2 rdf:resource="https://frangp83.github.io/ontotravel#Music_event"/>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://frangp83.github.io/ontotravel#City"/>
+                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#city"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -17739,8 +17732,8 @@
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                 <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#isCityOf"/>
-                                <swrl:argument1 rdf:resource="https://frango83.github.io/ontotravel#city"/>
-                                <swrl:argument2 rdf:resource="https://frango83.github.io/ontotravel#event"/>
+                                <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#city"/>
+                                <swrl:argument2 rdf:resource="https://frangp83.github.io/ontotravel#event"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -17748,9 +17741,10 @@
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                 <rdf:first>
                                     <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                        <swrl:classPredicate rdf:resource="https://frangp83.github.io/ontotravel#City"/>
-                                        <swrl:argument1 rdf:resource="https://frango83.github.io/ontotravel#city"/>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasEventType"/>
+                                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#event"/>
+                                        <swrl:argument2 rdf:resource="https://frangp83.github.io/ontotravel#Music_event"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -17767,7 +17761,7 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                         <swrl:classPredicate rdf:resource="https://frangp83.github.io/ontotravel#ConcertCity"/>
-                        <swrl:argument1 rdf:resource="https://frango83.github.io/ontotravel#city"/>
+                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#city"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -17784,10 +17778,9 @@
                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                 <rdf:first>
                     <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasPrice"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#hotel"/>
-                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#price"/>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://frangp83.github.io/ontotravel#Hotel"/>
+                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#hotel"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -17795,10 +17788,10 @@
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                         <rdf:first>
                             <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasPriceValue"/>
-                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#price"/>
-                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#value"/>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasPrice"/>
+                                <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#hotel"/>
+                                <swrl:argument2 rdf:resource="https://frangp83.github.io/ontotravel#price"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -17806,21 +17799,10 @@
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                 <rdf:first>
                                     <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
-                                        <swrl:arguments>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                <rdf:first rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#value"/>
-                                                <rdf:rest>
-                                                    <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200</rdf:first>
-                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                                    </rdf:Description>
-                                                </rdf:rest>
-                                            </rdf:Description>
-                                        </swrl:arguments>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasPriceValue"/>
+                                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#price"/>
+                                        <swrl:argument2 rdf:resource="https://frangp83.github.io/ontotravel#value"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -17828,9 +17810,21 @@
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                         <rdf:first>
                                             <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                <swrl:classPredicate rdf:resource="https://frangp83.github.io/ontotravel#Hotel"/>
-                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#hotel"/>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:resource="https://frangp83.github.io/ontotravel#value"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
                                             </rdf:Description>
                                         </rdf:first>
                                         <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -17849,7 +17843,7 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                         <swrl:classPredicate rdf:resource="https://frangp83.github.io/ontotravel#ExpensiveHotel"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#hotel"/>
+                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#hotel"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -17866,10 +17860,9 @@
                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                 <rdf:first>
                     <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasPrice"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#hotel"/>
-                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#price"/>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://frangp83.github.io/ontotravel#Hotel"/>
+                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#hotel"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -17877,21 +17870,10 @@
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                         <rdf:first>
                             <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
-                                <swrl:arguments>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                        <rdf:first rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#value"/>
-                                        <rdf:rest>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200</rdf:first>
-                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                            </rdf:Description>
-                                        </rdf:rest>
-                                    </rdf:Description>
-                                </swrl:arguments>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasPrice"/>
+                                <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#hotel"/>
+                                <swrl:argument2 rdf:resource="https://frangp83.github.io/ontotravel#price"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -17899,21 +17881,10 @@
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                 <rdf:first>
                                     <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
-                                        <swrl:arguments>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                <rdf:first rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#value"/>
-                                                <rdf:rest>
-                                                    <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</rdf:first>
-                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                                    </rdf:Description>
-                                                </rdf:rest>
-                                            </rdf:Description>
-                                        </swrl:arguments>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasPriceValue"/>
+                                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#price"/>
+                                        <swrl:argument2 rdf:resource="https://frangp83.github.io/ontotravel#value"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -17921,10 +17892,21 @@
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                         <rdf:first>
                                             <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                                                <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasPriceValue"/>
-                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#price"/>
-                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#value"/>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:resource="https://frangp83.github.io/ontotravel#value"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
                                             </rdf:Description>
                                         </rdf:first>
                                         <rdf:rest>
@@ -17932,9 +17914,21 @@
                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                                 <rdf:first>
                                                     <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                        <swrl:classPredicate rdf:resource="https://frangp83.github.io/ontotravel#Hotel"/>
-                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#hotel"/>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                                                        <swrl:arguments>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:resource="https://frangp83.github.io/ontotravel#value"/>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200</rdf:first>
+                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </swrl:arguments>
                                                     </rdf:Description>
                                                 </rdf:first>
                                                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -17955,7 +17949,7 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                         <swrl:classPredicate rdf:resource="https://frangp83.github.io/ontotravel#AveragePricedHotel"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#hotel"/>
+                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#hotel"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -17972,10 +17966,9 @@
                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                 <rdf:first>
                     <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasPrice"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#hotel"/>
-                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#price"/>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://frangp83.github.io/ontotravel#Hotel"/>
+                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#hotel"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -17983,21 +17976,10 @@
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                         <rdf:first>
                             <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
-                                <swrl:arguments>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                        <rdf:first rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#value"/>
-                                        <rdf:rest>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</rdf:first>
-                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                            </rdf:Description>
-                                        </rdf:rest>
-                                    </rdf:Description>
-                                </swrl:arguments>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasPrice"/>
+                                <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#hotel"/>
+                                <swrl:argument2 rdf:resource="https://frangp83.github.io/ontotravel#price"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -18007,8 +17989,8 @@
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
                                         <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasPriceValue"/>
-                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#price"/>
-                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#value"/>
+                                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#price"/>
+                                        <swrl:argument2 rdf:resource="https://frangp83.github.io/ontotravel#value"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -18016,9 +17998,21 @@
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                         <rdf:first>
                                             <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                <swrl:classPredicate rdf:resource="https://frangp83.github.io/ontotravel#Hotel"/>
-                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#hotel"/>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:resource="https://frangp83.github.io/ontotravel#value"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
                                             </rdf:Description>
                                         </rdf:first>
                                         <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -18037,7 +18031,7 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                         <swrl:classPredicate rdf:resource="https://frangp83.github.io/ontotravel#CheapHotel"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#hotel"/>
+                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#hotel"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -18054,10 +18048,9 @@
                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                 <rdf:first>
                     <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasRating"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#hotel"/>
-                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#rating"/>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://frangp83.github.io/ontotravel#Hotel"/>
+                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#hotel"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -18065,10 +18058,10 @@
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                         <rdf:first>
                             <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasRatingValue"/>
-                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#rating"/>
-                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#value"/>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasRating"/>
+                                <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#hotel"/>
+                                <swrl:argument2 rdf:resource="https://frangp83.github.io/ontotravel#rating"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -18076,21 +18069,10 @@
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                 <rdf:first>
                                     <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
-                                        <swrl:arguments>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                <rdf:first rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#value"/>
-                                                <rdf:rest>
-                                                    <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.5</rdf:first>
-                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                                    </rdf:Description>
-                                                </rdf:rest>
-                                            </rdf:Description>
-                                        </swrl:arguments>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasRatingValue"/>
+                                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#rating"/>
+                                        <swrl:argument2 rdf:resource="https://frangp83.github.io/ontotravel#value"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -18099,15 +18081,15 @@
                                         <rdf:first>
                                             <rdf:Description>
                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
                                                 <swrl:arguments>
                                                     <rdf:Description>
                                                         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                        <rdf:first rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#value"/>
+                                                        <rdf:first rdf:resource="https://frangp83.github.io/ontotravel#value"/>
                                                         <rdf:rest>
                                                             <rdf:Description>
                                                                 <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</rdf:first>
+                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.5</rdf:first>
                                                                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
                                                             </rdf:Description>
                                                         </rdf:rest>
@@ -18120,106 +18102,12 @@
                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                                 <rdf:first>
                                                     <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                        <swrl:classPredicate rdf:resource="https://frangp83.github.io/ontotravel#Hotel"/>
-                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#hotel"/>
-                                                    </rdf:Description>
-                                                </rdf:first>
-                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                            </rdf:Description>
-                                        </rdf:rest>
-                                    </rdf:Description>
-                                </rdf:rest>
-                            </rdf:Description>
-                        </rdf:rest>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="https://frangp83.github.io/ontotravel#AverageRatedHotel"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#hotel"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <swrl2:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl2:isRuleEnabled>
-        <rdfs:comment>If an hotel has a rating equal or over 4 and under 4.5, it is considered good</rdfs:comment>
-        <rdfs:label>GoodRatedHotel Rule</rdfs:label>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasRating"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#hotel"/>
-                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#rating"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasRatingValue"/>
-                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#rating"/>
-                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#value"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                <rdf:first>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
-                                        <swrl:arguments>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                <rdf:first rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#value"/>
-                                                <rdf:rest>
-                                                    <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.5</rdf:first>
-                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                                    </rdf:Description>
-                                                </rdf:rest>
-                                            </rdf:Description>
-                                        </swrl:arguments>
-                                    </rdf:Description>
-                                </rdf:first>
-                                <rdf:rest>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                        <rdf:first>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                <swrl:classPredicate rdf:resource="https://frangp83.github.io/ontotravel#Hotel"/>
-                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#hotel"/>
-                                            </rdf:Description>
-                                        </rdf:first>
-                                        <rdf:rest>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                                <rdf:first>
-                                                    <rdf:Description>
                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
                                                         <swrl:arguments>
                                                             <rdf:Description>
                                                                 <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                                <rdf:first rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#value"/>
+                                                                <rdf:first rdf:resource="https://frangp83.github.io/ontotravel#value"/>
                                                                 <rdf:rest>
                                                                     <rdf:Description>
                                                                         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
@@ -18248,8 +18136,114 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://frangp83.github.io/ontotravel#AverageRatedHotel"/>
+                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#hotel"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrl2:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl2:isRuleEnabled>
+        <rdfs:comment>If an hotel has a rating equal or over 4 and under 4.5, it is considered good</rdfs:comment>
+        <rdfs:label>GoodRatedHotel Rule</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://frangp83.github.io/ontotravel#Hotel"/>
+                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#hotel"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasRating"/>
+                                <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#hotel"/>
+                                <swrl:argument2 rdf:resource="https://frangp83.github.io/ontotravel#rating"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasRatingValue"/>
+                                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#rating"/>
+                                        <swrl:argument2 rdf:resource="https://frangp83.github.io/ontotravel#value"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:resource="https://frangp83.github.io/ontotravel#value"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                                        <swrl:arguments>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:resource="https://frangp83.github.io/ontotravel#value"/>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.5</rdf:first>
+                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </swrl:arguments>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                         <swrl:classPredicate rdf:resource="https://frangp83.github.io/ontotravel#GoodRatedHotel"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#hotel"/>
+                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#hotel"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -18266,10 +18260,9 @@
                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                 <rdf:first>
                     <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasRating"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#hotel"/>
-                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#rating"/>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://frangp83.github.io/ontotravel#Hotel"/>
+                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#hotel"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -18277,10 +18270,10 @@
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                         <rdf:first>
                             <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasRatingValue"/>
-                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#rating"/>
-                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#value"/>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasRating"/>
+                                <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#hotel"/>
+                                <swrl:argument2 rdf:resource="https://frangp83.github.io/ontotravel#rating"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -18288,21 +18281,10 @@
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                 <rdf:first>
                                     <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
-                                        <swrl:arguments>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                <rdf:first rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#value"/>
-                                                <rdf:rest>
-                                                    <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.5</rdf:first>
-                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                                    </rdf:Description>
-                                                </rdf:rest>
-                                            </rdf:Description>
-                                        </swrl:arguments>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasRatingValue"/>
+                                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#rating"/>
+                                        <swrl:argument2 rdf:resource="https://frangp83.github.io/ontotravel#value"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -18310,9 +18292,21 @@
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                         <rdf:first>
                                             <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                <swrl:classPredicate rdf:resource="https://frangp83.github.io/ontotravel#Hotel"/>
-                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#hotel"/>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:resource="https://frangp83.github.io/ontotravel#value"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.5</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
                                             </rdf:Description>
                                         </rdf:first>
                                         <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -18331,7 +18325,7 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                         <swrl:classPredicate rdf:resource="https://frangp83.github.io/ontotravel#VeryGoodRatedHotel"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#hotel"/>
+                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#hotel"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -18348,21 +18342,9 @@
                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                 <rdf:first>
                     <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
-                        <swrl:arguments>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                <rdf:first rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#value"/>
-                                <rdf:rest>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.5</rdf:first>
-                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                    </rdf:Description>
-                                </rdf:rest>
-                            </rdf:Description>
-                        </swrl:arguments>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://frangp83.github.io/ontotravel#Hotel"/>
+                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#hotel"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -18372,8 +18354,8 @@
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                 <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasRating"/>
-                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#hotel"/>
-                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#rating"/>
+                                <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#hotel"/>
+                                <swrl:argument2 rdf:resource="https://frangp83.github.io/ontotravel#rating"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -18383,8 +18365,8 @@
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
                                         <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasRatingValue"/>
-                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#rating"/>
-                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#value"/>
+                                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#rating"/>
+                                        <swrl:argument2 rdf:resource="https://frangp83.github.io/ontotravel#value"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -18392,9 +18374,21 @@
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                         <rdf:first>
                                             <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                <swrl:classPredicate rdf:resource="https://frangp83.github.io/ontotravel#Hotel"/>
-                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#hotel"/>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:resource="https://frangp83.github.io/ontotravel#value"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.5</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
                                             </rdf:Description>
                                         </rdf:first>
                                         <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -18413,7 +18407,7 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                         <swrl:classPredicate rdf:resource="https://frangp83.github.io/ontotravel#BadRatedHotel"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#hotel"/>
+                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#hotel"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -18432,7 +18426,7 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                         <swrl:classPredicate rdf:resource="https://frangp83.github.io/ontotravel#Restaurant"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#restaurant"/>
+                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#restaurant"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -18440,21 +18434,10 @@
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                         <rdf:first>
                             <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
-                                <swrl:arguments>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                        <rdf:first rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#value"/>
-                                        <rdf:rest>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</rdf:first>
-                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                            </rdf:Description>
-                                        </rdf:rest>
-                                    </rdf:Description>
-                                </swrl:arguments>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasPrice"/>
+                                <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#restaurant"/>
+                                <swrl:argument2 rdf:resource="https://frangp83.github.io/ontotravel#price"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -18464,8 +18447,8 @@
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
                                         <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasPriceValue"/>
-                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#price"/>
-                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#value"/>
+                                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#price"/>
+                                        <swrl:argument2 rdf:resource="https://frangp83.github.io/ontotravel#value"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -18473,10 +18456,21 @@
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                         <rdf:first>
                                             <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasPrice"/>
-                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#restaurant"/>
-                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#price"/>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:resource="https://frangp83.github.io/ontotravel#value"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
                                             </rdf:Description>
                                         </rdf:first>
                                         <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -18495,7 +18489,7 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                         <swrl:classPredicate rdf:resource="https://frangp83.github.io/ontotravel#ExpensiveRestaurant"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#restaurant"/>
+                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#restaurant"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -18514,7 +18508,7 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                         <swrl:classPredicate rdf:resource="https://frangp83.github.io/ontotravel#Restaurant"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#restaurant"/>
+                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#restaurant"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -18522,21 +18516,10 @@
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                         <rdf:first>
                             <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
-                                <swrl:arguments>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                        <rdf:first rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#value"/>
-                                        <rdf:rest>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</rdf:first>
-                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                            </rdf:Description>
-                                        </rdf:rest>
-                                    </rdf:Description>
-                                </swrl:arguments>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasPrice"/>
+                                <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#restaurant"/>
+                                <swrl:argument2 rdf:resource="https://frangp83.github.io/ontotravel#price"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -18546,8 +18529,8 @@
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
                                         <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasPriceValue"/>
-                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#price"/>
-                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#value"/>
+                                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#price"/>
+                                        <swrl:argument2 rdf:resource="https://frangp83.github.io/ontotravel#value"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -18555,10 +18538,21 @@
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                         <rdf:first>
                                             <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasPrice"/>
-                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#restaurant"/>
-                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#price"/>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:resource="https://frangp83.github.io/ontotravel#value"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
                                             </rdf:Description>
                                         </rdf:first>
                                         <rdf:rest>
@@ -18571,7 +18565,7 @@
                                                         <swrl:arguments>
                                                             <rdf:Description>
                                                                 <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                                <rdf:first rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#value"/>
+                                                                <rdf:first rdf:resource="https://frangp83.github.io/ontotravel#value"/>
                                                                 <rdf:rest>
                                                                     <rdf:Description>
                                                                         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
@@ -18601,7 +18595,7 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                         <swrl:classPredicate rdf:resource="https://frangp83.github.io/ontotravel#AveragePricedRestaurant"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#restaurant"/>
+                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#restaurant"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -18620,7 +18614,7 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                         <swrl:classPredicate rdf:resource="https://frangp83.github.io/ontotravel#Restaurant"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#restaurant"/>
+                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#restaurant"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -18628,21 +18622,10 @@
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                         <rdf:first>
                             <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
-                                <swrl:arguments>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                        <rdf:first rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#value"/>
-                                        <rdf:rest>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</rdf:first>
-                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                            </rdf:Description>
-                                        </rdf:rest>
-                                    </rdf:Description>
-                                </swrl:arguments>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasPrice"/>
+                                <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#restaurant"/>
+                                <swrl:argument2 rdf:resource="https://frangp83.github.io/ontotravel#price"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -18652,8 +18635,8 @@
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
                                         <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasPriceValue"/>
-                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#price"/>
-                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#value"/>
+                                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#price"/>
+                                        <swrl:argument2 rdf:resource="https://frangp83.github.io/ontotravel#value"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -18661,10 +18644,21 @@
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                         <rdf:first>
                                             <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasPrice"/>
-                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#restaurant"/>
-                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#price"/>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:resource="https://frangp83.github.io/ontotravel#value"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
                                             </rdf:Description>
                                         </rdf:first>
                                         <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -18683,7 +18677,7 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                         <swrl:classPredicate rdf:resource="https://frangp83.github.io/ontotravel#CheapRestaurant"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#restaurant"/>
+                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#restaurant"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -18700,10 +18694,9 @@
                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                 <rdf:first>
                     <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasRatingValue"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#rating"/>
-                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#value"/>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://frangp83.github.io/ontotravel#Restaurant"/>
+                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#restaurant"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -18711,21 +18704,10 @@
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                         <rdf:first>
                             <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
-                                <swrl:arguments>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                        <rdf:first rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#value"/>
-                                        <rdf:rest>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.5</rdf:first>
-                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                            </rdf:Description>
-                                        </rdf:rest>
-                                    </rdf:Description>
-                                </swrl:arguments>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasRating"/>
+                                <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#restaurant"/>
+                                <swrl:argument2 rdf:resource="https://frangp83.github.io/ontotravel#rating"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -18733,9 +18715,10 @@
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                 <rdf:first>
                                     <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                        <swrl:classPredicate rdf:resource="https://frangp83.github.io/ontotravel#Restaurant"/>
-                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#restaurant"/>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasRatingValue"/>
+                                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#rating"/>
+                                        <swrl:argument2 rdf:resource="https://frangp83.github.io/ontotravel#value"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -18743,10 +18726,21 @@
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                         <rdf:first>
                                             <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasRating"/>
-                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#restaurant"/>
-                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#rating"/>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:resource="https://frangp83.github.io/ontotravel#value"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.5</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
                                             </rdf:Description>
                                         </rdf:first>
                                         <rdf:rest>
@@ -18759,7 +18753,7 @@
                                                         <swrl:arguments>
                                                             <rdf:Description>
                                                                 <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                                <rdf:first rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#value"/>
+                                                                <rdf:first rdf:resource="https://frangp83.github.io/ontotravel#value"/>
                                                                 <rdf:rest>
                                                                     <rdf:Description>
                                                                         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
@@ -18789,7 +18783,7 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                         <swrl:classPredicate rdf:resource="https://frangp83.github.io/ontotravel#AverageRatedRestaurant"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#restaurant"/>
+                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#restaurant"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -18806,10 +18800,9 @@
                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                 <rdf:first>
                     <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasRatingValue"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#rating"/>
-                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#value"/>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://frangp83.github.io/ontotravel#Restaurant"/>
+                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#restaurant"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -18817,21 +18810,10 @@
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                         <rdf:first>
                             <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
-                                <swrl:arguments>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                        <rdf:first rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#value"/>
-                                        <rdf:rest>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.5</rdf:first>
-                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                            </rdf:Description>
-                                        </rdf:rest>
-                                    </rdf:Description>
-                                </swrl:arguments>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasRating"/>
+                                <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#restaurant"/>
+                                <swrl:argument2 rdf:resource="https://frangp83.github.io/ontotravel#rating"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -18839,9 +18821,10 @@
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                 <rdf:first>
                                     <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                        <swrl:classPredicate rdf:resource="https://frangp83.github.io/ontotravel#Restaurant"/>
-                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#restaurant"/>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasRatingValue"/>
+                                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#rating"/>
+                                        <swrl:argument2 rdf:resource="https://frangp83.github.io/ontotravel#value"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -18849,10 +18832,21 @@
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                         <rdf:first>
                                             <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasRating"/>
-                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#restaurant"/>
-                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#rating"/>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:resource="https://frangp83.github.io/ontotravel#value"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
                                             </rdf:Description>
                                         </rdf:first>
                                         <rdf:rest>
@@ -18861,15 +18855,15 @@
                                                 <rdf:first>
                                                     <rdf:Description>
                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
                                                         <swrl:arguments>
                                                             <rdf:Description>
                                                                 <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                                <rdf:first rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#value"/>
+                                                                <rdf:first rdf:resource="https://frangp83.github.io/ontotravel#value"/>
                                                                 <rdf:rest>
                                                                     <rdf:Description>
                                                                         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</rdf:first>
+                                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.5</rdf:first>
                                                                         <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
                                                                     </rdf:Description>
                                                                 </rdf:rest>
@@ -18895,7 +18889,7 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                         <swrl:classPredicate rdf:resource="https://frangp83.github.io/ontotravel#GoodRatedRestaurant"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#restaurant"/>
+                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#restaurant"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -18912,10 +18906,9 @@
                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                 <rdf:first>
                     <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasRatingValue"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#rating"/>
-                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#value"/>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://frangp83.github.io/ontotravel#Restaurant"/>
+                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#restaurant"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -18923,21 +18916,10 @@
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                         <rdf:first>
                             <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
-                                <swrl:arguments>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                        <rdf:first rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#value"/>
-                                        <rdf:rest>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.5</rdf:first>
-                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                            </rdf:Description>
-                                        </rdf:rest>
-                                    </rdf:Description>
-                                </swrl:arguments>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasRating"/>
+                                <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#restaurant"/>
+                                <swrl:argument2 rdf:resource="https://frangp83.github.io/ontotravel#rating"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -18945,9 +18927,10 @@
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                 <rdf:first>
                                     <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                        <swrl:classPredicate rdf:resource="https://frangp83.github.io/ontotravel#Restaurant"/>
-                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#restaurant"/>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasRatingValue"/>
+                                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#rating"/>
+                                        <swrl:argument2 rdf:resource="https://frangp83.github.io/ontotravel#value"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -18955,10 +18938,21 @@
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                         <rdf:first>
                                             <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasRating"/>
-                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#restaurant"/>
-                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#rating"/>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:resource="https://frangp83.github.io/ontotravel#value"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.5</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
                                             </rdf:Description>
                                         </rdf:first>
                                         <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -18977,7 +18971,7 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                         <swrl:classPredicate rdf:resource="https://frangp83.github.io/ontotravel#VeryGoodRatedRestaurant"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#restaurant"/>
+                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#restaurant"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -18994,21 +18988,9 @@
                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                 <rdf:first>
                     <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
-                        <swrl:arguments>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                <rdf:first rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#value"/>
-                                <rdf:rest>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.5</rdf:first>
-                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                    </rdf:Description>
-                                </rdf:rest>
-                            </rdf:Description>
-                        </swrl:arguments>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://frangp83.github.io/ontotravel#Restaurant"/>
+                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#restaurant"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -19016,10 +18998,10 @@
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                         <rdf:first>
                             <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasRatingValue"/>
-                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#rating"/>
-                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#value"/>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasRating"/>
+                                <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#restaurant"/>
+                                <swrl:argument2 rdf:resource="https://frangp83.github.io/ontotravel#rating"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -19027,9 +19009,10 @@
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                 <rdf:first>
                                     <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                        <swrl:classPredicate rdf:resource="https://frangp83.github.io/ontotravel#Restaurant"/>
-                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#restaurant"/>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasRatingValue"/>
+                                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#rating"/>
+                                        <swrl:argument2 rdf:resource="https://frangp83.github.io/ontotravel#value"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -19037,10 +19020,21 @@
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                         <rdf:first>
                                             <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasRating"/>
-                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#restaurant"/>
-                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#rating"/>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:resource="https://frangp83.github.io/ontotravel#value"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.5</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
                                             </rdf:Description>
                                         </rdf:first>
                                         <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -19059,7 +19053,7 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                         <swrl:classPredicate rdf:resource="https://frangp83.github.io/ontotravel#BadlyRatedRestaurant"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#restaurant"/>
+                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#restaurant"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -19078,7 +19072,7 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                         <swrl:classPredicate rdf:resource="https://frangp83.github.io/ontotravel#Transport"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#transport"/>
+                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#transport"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -19086,10 +19080,10 @@
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                         <rdf:first>
                             <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasPriceValue"/>
-                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#price"/>
-                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#value"/>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasPrice"/>
+                                <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#transport"/>
+                                <swrl:argument2 rdf:resource="https://frangp83.github.io/ontotravel#price"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -19097,10 +19091,10 @@
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                 <rdf:first>
                                     <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                        <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasPrice"/>
-                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#transport"/>
-                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#price"/>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasPriceValue"/>
+                                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#price"/>
+                                        <swrl:argument2 rdf:resource="https://frangp83.github.io/ontotravel#value"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -19113,7 +19107,7 @@
                                                 <swrl:arguments>
                                                     <rdf:Description>
                                                         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                        <rdf:first rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#value"/>
+                                                        <rdf:first rdf:resource="https://frangp83.github.io/ontotravel#value"/>
                                                         <rdf:rest>
                                                             <rdf:Description>
                                                                 <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
@@ -19141,7 +19135,7 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                         <swrl:classPredicate rdf:resource="https://frangp83.github.io/ontotravel#ExpensiveTransport"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#transport"/>
+                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#transport"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -19160,7 +19154,7 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                         <swrl:classPredicate rdf:resource="https://frangp83.github.io/ontotravel#Transport"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#transport"/>
+                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#transport"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -19168,21 +19162,10 @@
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                         <rdf:first>
                             <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
-                                <swrl:arguments>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                        <rdf:first rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#value"/>
-                                        <rdf:rest>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</rdf:first>
-                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                            </rdf:Description>
-                                        </rdf:rest>
-                                    </rdf:Description>
-                                </swrl:arguments>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasPrice"/>
+                                <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#transport"/>
+                                <swrl:argument2 rdf:resource="https://frangp83.github.io/ontotravel#price"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -19190,21 +19173,10 @@
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                 <rdf:first>
                                     <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
-                                        <swrl:arguments>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                <rdf:first rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#value"/>
-                                                <rdf:rest>
-                                                    <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</rdf:first>
-                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                                    </rdf:Description>
-                                                </rdf:rest>
-                                            </rdf:Description>
-                                        </swrl:arguments>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasPriceValue"/>
+                                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#price"/>
+                                        <swrl:argument2 rdf:resource="https://frangp83.github.io/ontotravel#value"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -19212,10 +19184,21 @@
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                         <rdf:first>
                                             <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                                                <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasPriceValue"/>
-                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#price"/>
-                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#value"/>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:resource="https://frangp83.github.io/ontotravel#value"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
                                             </rdf:Description>
                                         </rdf:first>
                                         <rdf:rest>
@@ -19223,10 +19206,21 @@
                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                                 <rdf:first>
                                                     <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                        <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasPrice"/>
-                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#transport"/>
-                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#price"/>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                                                        <swrl:arguments>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:resource="https://frangp83.github.io/ontotravel#value"/>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</rdf:first>
+                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </swrl:arguments>
                                                     </rdf:Description>
                                                 </rdf:first>
                                                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -19247,7 +19241,7 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                         <swrl:classPredicate rdf:resource="https://frangp83.github.io/ontotravel#AveragePricedTransport"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#transport"/>
+                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#transport"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -19266,7 +19260,7 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                         <swrl:classPredicate rdf:resource="https://frangp83.github.io/ontotravel#Transport"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#transport"/>
+                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#transport"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -19274,21 +19268,10 @@
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                         <rdf:first>
                             <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
-                                <swrl:arguments>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                        <rdf:first rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#value"/>
-                                        <rdf:rest>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</rdf:first>
-                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                            </rdf:Description>
-                                        </rdf:rest>
-                                    </rdf:Description>
-                                </swrl:arguments>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasPrice"/>
+                                <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#transport"/>
+                                <swrl:argument2 rdf:resource="https://frangp83.github.io/ontotravel#price"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -19298,8 +19281,8 @@
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
                                         <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasPriceValue"/>
-                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#price"/>
-                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#value"/>
+                                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#price"/>
+                                        <swrl:argument2 rdf:resource="https://frangp83.github.io/ontotravel#value"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -19307,10 +19290,21 @@
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                         <rdf:first>
                                             <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                <swrl:propertyPredicate rdf:resource="https://frangp83.github.io/ontotravel#hasPrice"/>
-                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#transport"/>
-                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#price"/>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:resource="https://frangp83.github.io/ontotravel#value"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
                                             </rdf:Description>
                                         </rdf:first>
                                         <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -19329,7 +19323,7 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                         <swrl:classPredicate rdf:resource="https://frangp83.github.io/ontotravel#CheapTransport"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/fran/ontologies/2025/2/untitled-ontology-4#transport"/>
+                        <swrl:argument1 rdf:resource="https://frangp83.github.io/ontotravel#transport"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
